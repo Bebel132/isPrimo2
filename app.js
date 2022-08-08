@@ -5,11 +5,11 @@ function isPrimo(valor) {
         contagem = 0;
         for(let e = i; e>=0; e--){
             if(i%e==0){
-                contagem++
+                contagem++;
             }
         }
         if(contagem == 2){
-            arr.push(i)
+            arr.push(i);
         }
     }
 }
@@ -17,19 +17,19 @@ function isPrimo(valor) {
 const saida = document.querySelector(".saida");
 
 document.querySelector("#enviar").addEventListener('click', (e) => {
-    e.preventDefault()
+    e.preventDefault();
     saida.innerHTML = "";
-    saida.append(document.createTextNode("Os número primos até esse são: "))
-    isPrimo(document.querySelector("#numero").value)
+    saida.append(document.createTextNode("Os número primos até esse são: "));
+    isPrimo(document.querySelector("#numero").value);
 
     let texto = "";
 
     arr.forEach(i => {
         if(i != arr.at(-1)){
-            saida.append(document.createTextNode(i+", "))
+            saida.append(document.createTextNode(i+", "));
         } else {
-            saida.append(document.createTextNode(i))
+            saida.append(document.createTextNode(i));
         }
     })
-    arr = []
+    arr = [];
 })
