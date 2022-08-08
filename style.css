@@ -12,14 +12,14 @@ body {
 
 .container {
     width: 100%;
-    max-width: 20rem;
+    max-width: 30rem;
     border: 1px solid black;
     min-height: 10rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin: 0 1rem;
+    margin: 1rem;
     padding: 1rem;
 }
 
@@ -43,7 +43,7 @@ form input {
 }
 
 .saida {
-    width: 15rem;
+    width: 20rem;
     min-height: 1rem;
     border: 1px solid black;
     margin-top: 1rem;
